@@ -72,7 +72,19 @@ main{
     padding: 10px 0;
     display: inline-block;
 }
-
+/* struttura tabella */
+td{ 
+    font-size: 0.7rem;
+}
+.btn.btn-outline-secondary{ 
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.btn {
+    --bs-btn-padding-x: 0;
+    --bs-btn-padding-y: 0;
+}
 /* nav laterale main */
 .nav-side{ 
     width:50px;
@@ -115,15 +127,6 @@ a{
 
 
 
-/* debug */
-[class*="col"]
-            {
-    
-   
-    min-height: 400px;
-   
 
-
-}
     
    
