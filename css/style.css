@@ -8,7 +8,7 @@
 }
 
 /* header */
-.row{ 
+.row-header{ 
     height:50px;
     display: flex;
     width: 100%;
@@ -28,23 +28,67 @@ main{
     height: calc(100vh - 50px);
     display: flex;
 }
+/* sezione student */
+.student{ 
+    background-color: #1b72e8;
+    width: 100%;
+    padding: 20px 10px;
+    color: #fff;
+    
+}
+.fa-plus{ 
+    color:white;
+    border: 1px solid white;
+    height: 30px;
+    width: 30px;
+    font-size: 0.8rem;
+    line-height: 30px;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+/* button sezione studente */
+.button{ 
+    color: #fff;
+    background-color: #165bba;
+    border: hidden;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    padding: 2px;
+    
+}
+.student a { 
+    display: inline-block;
+    
+}
+ .fa-plus.icon { 
+    border: hidden;
+    width: 10px;
+    padding-right: 10px;
+}
+.text-student{ 
+    font-size: 0.8rem;
+    padding: 10px 0;
+    display: inline-block;
+}
+
 /* nav laterale main */
 .nav-side{ 
     width:50px;
-    height:calc(100vh - 50px);
+    height:100%;
     background-color:#0c2439;
-    
     background-image: url(../img/sidebar-bg.png);
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
-.nav{ 
+.icon-menu{ 
     flex-grow: 1;
 }
 .nav-side img{ 
     width: 50px;
-    
 }
 a{ 
     color: white;
@@ -53,15 +97,33 @@ a{
 
 /* admin nav laterale */
 .gear{ 
-    flex-direction: column;
+   
     align-items: flex-end;
 }
 
  .contenitore{ 
     width: calc(100% - 50px);
-    padding-top: 50px;
-    background-color: bisque;
-   
     flex-grow: 1;
     height: 100%;
+    overflow: auto;
 } 
+
+
+
+
+
+
+
+
+/* debug */
+[class*="col"]
+            {
+    
+   
+    min-height: 400px;
+   
+
+
+}
+    
+   
