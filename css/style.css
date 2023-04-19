@@ -31,7 +31,7 @@
     background-color: #e5e5e5;
     border: hidden;
     width: 90%;
-    
+    font-size: 0.8rem;
    
 }
 
@@ -49,6 +49,10 @@ header form{
 header img{ 
     width:50px;
 }
+.icon-menu a:hover{ 
+    background-color:#6c757d;
+    cursor: pointer;
+}
 
 
 /* main sezione centrale */
@@ -60,6 +64,9 @@ main{
 .gear{ 
    
     align-items: flex-end;
+}
+.gear:hover{ 
+    background-color:#6c757d;
 }
 
  .contenitore{ 
@@ -121,6 +128,16 @@ main{
 .change-order{ 
     order: -1;
 }
+
+
+}
+@media screen and (max-width:768px) {
+    .offcanvas.offcanvas-end {
+        
+        width: 100%;
+    
+    
+    }
 }
 /* struttura tabella */
 .title-table{ 
@@ -136,6 +153,10 @@ main{
     margin-bottom: 20px;
     border-radius: 5px;
     font-size: 0.7rem;
+}
+/* tr in hover */
+tr:hover{ 
+    background-color: #e0e0e0;
 }
 /* bt components */
 .btn.btn-outline-secondary{ 
