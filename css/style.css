@@ -189,26 +189,7 @@ tr:hover{
     
 }
 /* sezione faq */
-li a{ 
-    color: #0c2439;
-    text-decoration: none;
-    padding: 10px 0;
-}
-li{ 
-    list-style-type: none;
-    border-bottom: 1px solid #e0e0e0;
-    
-}
 
-li i{ 
-    margin-left: 30px;
-    display: inline-block;
-}
-
-
-.question{ 
-    border-bottom: hidden;
-}
 /* sezione todo */
 
 .check{ 
