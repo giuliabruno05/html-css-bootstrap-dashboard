@@ -20,6 +20,9 @@
     color: #ff9002;
     
 }
+.btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active{ 
+    border: hidden;
+}
 .btn{ 
     margin-right: 5px;
 }
@@ -32,18 +35,20 @@
     border: hidden;
     width: 90%;
     font-size: 0.8rem;
+
    
 }
-
+.fa-magnifying-glass{ 
+    font-size: 0.8rem;
+    margin: 0 5px;
+}
 header form{ 
     flex-grow: 1;
     background-color: #e5e5e5;
-    padding:0 10px;
+    padding:3px;
     border-radius: 5px;
-    height: 30px;
     margin: 0 10px;
-    line-height: 30px;
-    vertical-align: middle;
+    
 }
 
 header img{ 
@@ -242,7 +247,10 @@ li i{
 }
 .icon-menu{ 
     flex-grow: 1;
+    padding-top: 10px;
+
 }
+
 .nav-side img{ 
     width: 50px;
 }
@@ -261,7 +269,7 @@ a{
 .ms-display{ 
     display: none;
 }
-@media screen and (max-width:576px) {
+@media screen and (max-width:768px) {
     .compart{ 
         display:none;
     }
