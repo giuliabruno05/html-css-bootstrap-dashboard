@@ -20,14 +20,49 @@
     color: #ff9002;
     
 }
+/* barra di ricerca header */
+.ricerca{ 
+    background-color: #e5e5e5;
+    border: hidden;
+    width: 90%;
+    
+   
+}
+
+header form{ 
+    flex-grow: 1;
+    background-color: #e5e5e5;
+    padding:0 10px;
+    border-radius: 5px;
+    height: 30px;
+    margin: 0 10px;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
 header img{ 
     width:50px;
 }
+
+
 /* main sezione centrale */
 main{ 
     height: calc(100vh - 50px);
     display: flex;
 }
+/* admin nav laterale */
+.gear{ 
+   
+    align-items: flex-end;
+}
+
+ .contenitore{ 
+    width: calc(100% - 50px);
+    flex-grow: 1;
+    height: 100%;
+    overflow: auto;
+} 
+
 /* sezione student */
 .student{ 
     background-color: #1b72e8;
@@ -69,13 +104,29 @@ main{
 }
 .text-student{ 
     font-size: 0.8rem;
-    padding: 10px 0;
-    display: inline-block;
+    
+}
+@media screen and (max-width:576px) {
+.change-order{ 
+    order: -1;
+}
 }
 /* struttura tabella */
-td{ 
+.title-table{ 
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 10px;
+    background-color: #f7f7f7;
+    font-size: 1.0rem;
+}
+
+.item-class{ 
+    border: 1px solid #e0e0e0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
     font-size: 0.7rem;
 }
+/* bt components */
 .btn.btn-outline-secondary{ 
     width: 30px;
     height: 30px;
@@ -85,6 +136,67 @@ td{
     --bs-btn-padding-x: 0;
     --bs-btn-padding-y: 0;
 }
+.text-bg-warning {
+    color: #fff !important;
+}
+.fa-code{ 
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color:#f26a57;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    vertical-align: middle;
+    font-size:0.8rem;
+    
+}
+/* sezione faq */
+li a{ 
+    color: #0c2439;
+    text-decoration: none;
+    padding: 10px 0;
+}
+li{ 
+    list-style-type: none;
+    border-bottom: 1px solid #e0e0e0;
+    
+}
+
+li i{ 
+    margin-left: 30px;
+    display: inline-block;
+}
+
+
+.question{ 
+    border-bottom: hidden;
+}
+/* sezione todo */
+
+.check{ 
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin: 10px;
+}
+.element{ 
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px;
+   
+    
+}
+/* sezione stats */
+.stats img{ 
+    width: 90%;
+}
+.link{ 
+    text-decoration: underline;
+    color:#3484fc;
+}
+.subtitle{ 
+    margin-left: 10px;
+}
+
 /* nav laterale main */
 .nav-side{ 
     width:50px;
@@ -106,21 +218,45 @@ a{
     color: white;
     display: block;
 }
-
-/* admin nav laterale */
-.gear{ 
-   
-    align-items: flex-end;
+.item, .item-two{ 
+    display: none;
+}
+.item-icon{ 
+    color: black;
+    margin: 0 5px;
+    display: none;
 }
 
- .contenitore{ 
-    width: calc(100% - 50px);
-    flex-grow: 1;
-    height: 100%;
-    overflow: auto;
-} 
-
-
+@media screen and (max-width:576px) {
+    .compart{ 
+        display:none;
+    }
+}
+@media screen and (min-width:992px) {
+    .nav-side{ 
+        width: 150px;
+    }
+    .contenitore{ 
+        width: calc(100% - 150px);
+    }
+    a{ 
+        text-decoration: none;
+        
+    }
+    .item{ 
+        margin-left: 10px;
+        display:inline-block;
+    }
+    .item-two{ 
+        margin-left: 15px;
+        display:inline-block;
+    }
+    .item-icon{ 
+        display: inline-block;
+    }
+    
+    
+}
 
 
 

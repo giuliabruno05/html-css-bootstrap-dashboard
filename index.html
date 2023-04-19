@@ -21,9 +21,29 @@
     <header>
         <div class="row-header">
             <img src="img/mobile-logo.png" alt="logo mobile">
+            
+                <form method="post" action="/search">
+                        
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    
+                   
+                      <input class="ricerca" placeholder="Prova a cercare:Lezioni di Laravel" name="keyword" required >
+                    
+                    
+                </form>
             <a href="#">
+                <span class="item-icon">
+                    <i class="fa-solid fa-list-ul"></i>
+                </span>
+                <span class="item-icon">
+                    <i class="fa-solid fa-circle-question"></i>
+                </span>
+                <span class="item-icon">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </span>
                 <i class="fa-solid fa-bell"></i>
             </a>
+
         </div>
     </header>
     <!-- main -->
@@ -36,18 +56,31 @@
                 <div class="icon-menu">
                     <a href="#">
                         <i class="fa-solid fa-house"></i>
+                        <span class="item">
+                            Home
+                        </span>
                     </a>
+                    
                     <a href="#">
                         <i class="fa-solid fa-chart-simple"></i>
+                        <span class="item-two">
+                            Stats
+                        </span>
                     </a>
                     <a href="#">
                         <i class="fa-solid fa-signal"></i>
+                        <span class="item">
+                            Signal
+                        </span>
                     </a>
                     
                 </div>
                 <div class="gear">
                     <a href="#">
                         <i class="fa-solid fa-gear"></i>
+                        <span class="item">
+                            Admin
+                        </span>
                     </a>
                 </div>
                     
@@ -56,36 +89,58 @@
             <div class=" contenitore">
                  <!-- sezione nuovo studente -->
                 <div class="student">
-                    <span>
-                        Nuovo studente
-                        <i class="fa-solid fa-plus"></i>
-                    </span>
-                    <br>
-                    <span>
-                        Boolean
-                    </span>
-                    <button class="button">
-                        Piano blaze
-                    </button>
-                    <br>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-md-4 col-lg-6">
+                                <span>
+                                    Boolean
+                                </span>
+                                <button class="button">
+                                    Piano blaze
+                                </button>
+                                <br>
+                                <button class="button">
+                                    3 app
+                                </button>
+                                <a href="#">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                </a>
+                                <button class="button compart">
+                                    Boolean mobile app
+                                </button>
+                                <button class="button compart">
+                                    Boolean web app
+                                </button>
+                                <button class="button compart">
+                                    Boolean blog app
+                                </button>
+                                <span class="button">
+                                    <i class="fa-solid fa-plus icon"></i>
+                                </span>
+                                
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-3">
+                                <span class="text-student">
+                                    Studenti online negli ultimi 30 minuti
+                                </span>
+                                <br>
+                                <span>
+                                    <strong>125</strong>
+                                </span>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-3 change-order">
+                                <span class="text-student ">
+                                    Nuovo studente
+                                    <i class="fa-solid fa-plus"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                     
-                        <button class="button">
-                            3 app
-                        </button>
-                        <a href="#">
-                            <i class="fa-solid fa-angles-right"></i>
-                        </a>
-                        <span class="button">
-                            <i class="fa-solid fa-plus icon"></i>
-                        </span>
-                        <br>
-                        <span class="text-student">
-                            Studenti online negli ultimi 30 minuti
-                        </span>
-                        <br>
-                        <span>
-                            125
-                        </span>
+                    
+                    
+                        
+                       
                 </div> 
                <!-- sezione tabella prossime classi -->
                <div class="container-fluid">
@@ -94,13 +149,18 @@
                         <div class="col">
                             <!-- struttura classi -->
                             <div class="item-class">
-                                <span>Prossime classi</span>
+                                <div class="title-table"><strong>
+                                    Prossime classi
+                                </strong>
+                                    
+                                </div>
                                 <!-- componeti bt tabella -->
                                 <table class="table">
                                     <thead>
                                       <tr>
                                         <th scope="col">Nome</th>
-                                        <th scope="col"></th>
+                                        <th class="compart"scope="col">Data inizio</th>
+                                        <th class="compart" scope="col">ROI</th>
                                         <th scope="col">Stato</th>
                                         <th scope="col">Azioni</th>
                                        
@@ -109,32 +169,14 @@
                                     <tbody>
                                       <tr>
                                         <td scope="row"><i class="fa-solid fa-code"></i>
-                                            classe 75
+                                            Classe 75
                                         </td>
-                                        <td>
-                                           
+                                        <td class="compart">
+                                           15 febbraio 2021
                                         </td>
-                                        <td>
-                                            <span class="badge text-bg-success">Done</span>
-
-                                        </td>
-                                        <td>
-                                            <button type="button" class="btn btn-outline-secondary">
-                                                <i class="fa-solid fa-pencil"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-outline-secondary">
-                                                <i class="fa-solid fa-trash"></i>
-                                            </button>
-
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td scope="row"><i class="fa-solid fa-code"></i>
-                                            classe 76
-                                        </td>
-                                        <td>
-                                           
-                                        </td>
+                                        <td class="compart">
+                                            20%
+                                         </td>
                                         <td>
                                             <span class="badge text-bg-success">Done</span>
 
@@ -151,11 +193,38 @@
                                       </tr>
                                       <tr>
                                         <td scope="row"><i class="fa-solid fa-code"></i>
-                                            classe 77
+                                            Classe 76
+                                        </td>
+                                        <td class="compart">
+                                            16 febbraio 2021
+                                         </td>
+                                         <td class="compart">
+                                             20%
+                                          </td>
+                                        <td>
+                                            <span class="badge text-bg-success">Done</span>
+
                                         </td>
                                         <td>
-                                           
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <i class="fa-solid fa-pencil"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <i class="fa-solid fa-trash"></i>
+                                            </button>
+
                                         </td>
+                                      </tr>
+                                      <tr>
+                                        <td scope="row"><i class="fa-solid fa-code"></i>
+                                            Classe 77
+                                        </td>
+                                        <td class="compart">
+                                            17 febbraio 2021
+                                         </td>
+                                         <td class="compart">
+                                             20%
+                                          </td>
                                         <td>
                                             <span class="badge text-bg-warning">process</span>
 
@@ -172,11 +241,14 @@
                                       </tr>
                                       <tr>
                                         <td scope="row"><i class="fa-solid fa-code"></i>
-                                            classe 78
+                                            Classe 78
                                         </td>
-                                        <td>
-                                           
-                                        </td>
+                                        <td class="compart">
+                                            18 febbraio 2021
+                                         </td>
+                                         <td class="compart">
+                                             20%
+                                          </td>
                                         <td>
                                             <span class="badge text-bg-success">Done</span>
 
@@ -191,15 +263,95 @@
 
                                         </td>
                                       </tr>
-                                      <tr>
+                                    <tr>
                                         <td scope="row"><i class="fa-solid fa-code"></i>
-                                            classe 79
+                                            Classe 79
                                         </td>
-                                        <td>
-                                           
-                                        </td>
+                                        <td class="compart">
+                                            19 febbraio 2021
+                                         </td>
+                                         <td class="compart">
+                                             20%
+                                          </td>
                                         <td>
                                             <span class="badge text-bg-danger">failed</span>
+
+
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <i class="fa-solid fa-pencil"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <i class="fa-solid fa-trash"></i>
+                                            </button>
+
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td scope="row"><i class="fa-solid fa-code"></i>
+                                            Classe 80
+                                        </td>
+                                        <td class="compart">
+                                            20 febbraio 2021
+                                         </td>
+                                         <td class="compart">
+                                             20%
+                                          </td>
+                                        <td>
+                                            <span class="badge text-bg-success">Done</span>
+
+
+
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <i class="fa-solid fa-pencil"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <i class="fa-solid fa-trash"></i>
+                                            </button>
+
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td scope="row"><i class="fa-solid fa-code"></i>
+                                            Classe 81
+                                        </td>
+                                        <td class="compart">
+                                            21 febbraio 2021
+                                         </td>
+                                         <td class="compart">
+                                             20%
+                                          </td>
+                                        <td>
+                                            <span class="badge text-bg-danger">failed</span>
+
+
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <i class="fa-solid fa-pencil"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <i class="fa-solid fa-trash"></i>
+                                            </button>
+
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td scope="row"><i class="fa-solid fa-code"></i>
+                                            Classe 82
+                                        </td>
+                                        <td class="compart">
+                                            22 febbraio 2021
+                                         </td>
+                                         <td class="compart">
+                                             20%
+                                          </td>
+                                        <td>
+                                            <span class="badge text-bg-success">Done</span>
+
 
 
                                         </td>
@@ -218,21 +370,95 @@
                             </div>
                            
                         </div>
+                        <!-- struttura domande -->
                         <div class="col">
-                            <!-- struttura domande -->
-                            <div class="faq"></div>
+                            <div class="item-class">
+                                <div class="title-table">
+                                    <strong>
+                                    F.A.Q
+                                    </strong>
+                                    
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            Come aggiungere un nuovo studente ?
+                                           
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Come aggiungere un nuovo studente ?
+                                           
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </a>
+                                    </li>
+                                    <li class="question">
+                                        <a href="#">
+                                            Come aggiungere un nuovo studente ?
+                                           
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="col">
                             <!-- sezione to-do -->
-                        <div class="to-do"></div>
+                            <div class="item-class ">
+                                <div class="title-table">
+                                    <strong>
+                                    ToDo
+                                    </strong>
+                                    
+                                </div>
+
+                                <div class="check">
+                                    <div class="element">
+                                        <input type="checkbox" name="" id="" > Kickoff nuove classi
+                                    
+                                    </div>
+                                    <div class="element">
+                                        <input type="checkbox" name="" id="" > Lezioni su Bootstrap 5 in classe#75
+                                    
+                                    </div>
+                                    <div class="element border-0">
+                                        <input type="checkbox" name="" id="" > Controllare username github studenti
+                                    
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         
                            
                         
                         <div class="col">
-                            <div class="utenti"></div>
+                            <div class="item-class">
+                                <div class="stats">
+                                    <img src="img/stats.jpeg" alt="foto stats">
+                                </div>
+                                <span class="subtitle">
+                                    <strong>Utenti attivi</strong>
+                                </span>
+                                <div class="element ">Lista degli utenti attivi in piattaforma nell'ultimo mese
+                                </div>
+                                <div class="element">
+                                    Gennaio:1200
+                                </div>
+                                <div class="element">
+                                    Febbraio:800
+                                </div>
+                                <div class="element">
+                                    Marzo:1500
+                                </div>
+                                <div class="element border-bottom-0">
+                                    <a class="link" rel="stylesheet" href="#">Visualizza report approfondito
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                    </div>
